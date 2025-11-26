@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "marus25.cortex-debug",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "ms-vscode.cpptools"
+    ]
+}

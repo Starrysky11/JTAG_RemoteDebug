@@ -1,0 +1,21 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/Project.elf", //调试的文件路径
+            "name": "Debug with OpenOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "E:/SoftWare/OpenOcd/OpenOCD-20250710-0.12.0/share/openocd/scripts/interface/stlink-v2.cfg",  //在OpenOCD选择下载器
+                "E:/SoftWare/OpenOcd/OpenOCD-20250710-0.12.0/share/openocd/scripts/target/stm32f1x.cfg"    //在OpenOCD选择芯片
+            ],
+            "svdFile": "${workspaceRoot}/SVD/STM32F1/STM32F103.svd",   //选择寄存器文件
+        }
+    ]
+}
